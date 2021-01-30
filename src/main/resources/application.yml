@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: @profile.env@
+  jackson:
+    time-zone: Asia/Shanghai
+#    date-format: yyyy-MM-dd HH:mm:ss
+    default-property-inclusion: non_null
+
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+  tomcat:
+    uri-encoding: UTF-8
